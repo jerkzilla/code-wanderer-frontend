@@ -1,11 +1,11 @@
 import React from 'react';
+import {connect} from 'react-redux'
+import {fetchCategories} from './actions/fetchCategories'
 
 class App extends React.Component {
   
   componentDidMount() {
-    fetch('http://localhost:3000/categories')
-    .then(resp => resp.json())
-    .then(data => console.log(data[0].resources))
+   this.props.fetchCategories({type: 'FETCH_CATEGORIES', payload: {name: 'RUBY'}})
   }
   
   render() {
@@ -18,4 +18,12 @@ class App extends React.Component {
   
 }
 
-export default App;
+// const mapStateToProps = (state) => {
+//   return {
+//     categories: state.categories
+//   }
+// }
+
+
+
+export default connect(null, {fetchCategories})(App);

@@ -7,7 +7,7 @@ import categoryReducer from './reducers/categoryReducer'
 
 import App from './App';
 
-let reducer
+// let reducer
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
