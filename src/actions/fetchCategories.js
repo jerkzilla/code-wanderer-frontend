@@ -1,9 +1,13 @@
 
-export function fetchCategories(action) {
-    // fetch('http://localhost:3000/categories')
-    // .then(resp => resp.json())
-    // .then(data => console.log(data))
-
-    return action
+export function fetchCategories() {
+    return (dispatch) => {
+    fetch('http://localhost:3000/categories')
+    .then(resp => resp.json())
+    .then(categories => dispatch({
+        type: 'FETCH_CATEGORIES', 
+        payload: categories
+    }))
+    }
+     
     
 }
