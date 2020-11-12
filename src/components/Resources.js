@@ -1,44 +1,24 @@
-import React from 'react'
-// import { fetchResources } from '../actions/fetchResources'
-import {connect} from 'react-redux'
-import {fetchResources} from '../actions/fetchResources'
+import React from 'react';
+import {connect} from 'react-redux';
 
-
-class Resources extends React.Component {
-    
-    state = {}
-
-    componentDidMount() {
-        // debugger
-        // this.props.fetchResources()
-    }
-
-    render() {
-        return (
-            <div>
-                resources
-              {/* {this.props} */}
-
-                {/* {this.props.resources.map(resource => 
-                    <li key={resource.id}> {resource.name} - <img src={resource.img_url} alt={resource.name}/> </li>
-                  )} */}
-
-            </div>
-
-        )
-
-
-    }
-
-
+const Resources = (props) => {
+//    debugger
+   return (
+        <div>
+    resources
+    {/* if {props.resources !== undefined} { 
+       props.resources.forEach(resource => <li key={resource.id}>{resource.name}</li> ) 
+    } */}
+        </div>
+    )
 
 }
 
-const mapStateToProps = state => {
-    return {
-        categories: state.resources
-    }
-    
-    }
+const mSTP = state => {
+    // debugger
+    return {resources: state.resources}
+}
 
-export default connect(mapStateToProps, {fetchResources})(Resources)
+
+
+export default connect(mSTP)(Resources)

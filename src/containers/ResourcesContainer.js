@@ -1,6 +1,7 @@
 import React from 'react'
 import ResourceInput from '../components/ResourceInput'
 import Resources from '../components/Resources'
+import {connect} from 'react-redux'
 
 
 
@@ -10,8 +11,8 @@ class ResourcesContainer extends React.Component {
     return (
       <div>
         
-          <ResourceInput category={this.props.category}/><br/>
-          <Resources resources={this.props.resources}/>
+          <ResourceInput categories={this.props.categories}/><br/>
+          <Resources />
       </div>
 
     )
@@ -20,5 +21,12 @@ class ResourcesContainer extends React.Component {
 
 }
 
+const mapStateToProps = state => {
+  // debugger
+  return {
+      categories: state.categories
+      // resources: state.categories.resources
+  }
+}
 
-export default ResourcesContainer
+export default connect(mapStateToProps)(ResourcesContainer)
