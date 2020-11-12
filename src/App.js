@@ -1,6 +1,7 @@
 import React from 'react';
-import {connect} from 'react-redux'
+// import {connect} from 'react-redux'
 import CategoriesContainer from './containers/CategoriesContainer'
+import ResourcesContainer from './containers/ResourcesContainer'
 // import {fetchCategories} from './actions/fetchCategories'
 
 class App extends React.Component {
@@ -10,6 +11,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <CategoriesContainer />
+        <ResourcesContainer />
         
       </div>
     );
@@ -25,4 +27,4 @@ class App extends React.Component {
 
 
 
-export default connect()(App);
+export default App;
