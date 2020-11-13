@@ -8,10 +8,12 @@ import {connect} from 'react-redux'
 class ResourcesContainer extends React.Component {
 
   render() {
+    console.log(this.props)
     return (
       <div>
         
           <ResourceInput categories={this.props.categories}/><br/>
+          
           {/* <Resources categories={this.props.categories}/> */}
       </div>
 

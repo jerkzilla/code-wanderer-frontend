@@ -8,8 +8,9 @@ const Categories = (props) => {
  const handleClick = (event) => {
         event.preventDefault()   
         //   debugger
-       let catName = event.target.innerText
-       props.fetchResources(catName)
+       
+      let catObject = props.categories.find(category => category.name === event.target.innerText) 
+       props.fetchResources(catObject)
        console.log(props)
     }
     return (

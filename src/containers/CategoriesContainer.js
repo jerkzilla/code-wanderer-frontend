@@ -8,11 +8,10 @@ import Resources from '../components/Resources'
 
 class CategoriesContainer extends React.Component {
     
-    componentDidMount() {
-        this.props.fetchCategories()
-    }
+    
 
     render() {
+        
         return (
             <div>
                 <Categories categories={this.props.categories}/>

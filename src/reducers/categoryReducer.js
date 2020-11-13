@@ -7,15 +7,10 @@ export default function categoryReducer(state = {categories: []}, action) {
         //     return {resources: action.payload}
 
         case 'GET_RESOURCES' :
-          
-            let resources = state.categories.map(category => {
-              if (category.name === action.payload){
-              // debugger
-                return category.resources
-              }  
-            })   
+          // debugger
+          let category = action.payload
             // debugger     
-        return {...state, resources: resources[0]}
+        return {...state, resources: category.resources}
             
         case 'ADD_RESOURCE':
             let categories = state.categories.map(category => {
