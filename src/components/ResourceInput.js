@@ -30,12 +30,13 @@ class ResourceInput extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
+                    <label>Category:</label>
                     <input type="text" name="categoryId" value={this.state.categoryId} onChange={this.handleChange}/>
                     <label>Resource Name:</label>
                     <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                     
                     <br/>
-                    <label>Resource URL </label>
+                    <label>Resource URL: </label>
                     <input type="text" name="img_url" value={this.state.img_url} onChange={this.handleChange}/>
                     <input type="submit"/>
                 </form>

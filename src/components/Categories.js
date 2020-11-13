@@ -15,7 +15,7 @@ const Categories = (props) => {
     return (
 <div>
 
-    {props.categories.map(category => <li onClick={handleClick}key={category.id}>{category.name}</li> )}
+    {props.categories.map(category => <li onClick={handleClick}key={category.id}><button>{category.name}</button></li> )}
     
          <Resources resources={props.resources}/>
        
