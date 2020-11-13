@@ -12,7 +12,7 @@ class ResourcesContainer extends React.Component {
       <div>
         
           <ResourceInput categories={this.props.categories}/><br/>
-          <Resources />
+          <Resources categories={this.props.categories}/>
       </div>
 
     )

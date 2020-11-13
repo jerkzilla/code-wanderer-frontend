@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import { fetchCategories } from '../actions/fetchCategories'
 import Categories from '../components/Categories'
-// import Resources from '../components/Resources'
+import Resources from '../components/Resources'
 
 // import React, { Component } from 'react'
 
@@ -16,6 +16,7 @@ class CategoriesContainer extends React.Component {
         return (
             <div>
                 <Categories categories={this.props.categories}/>
+                {/* <Resources /> */}
                 {/* <Resources resources={this.props.categories.resources}/> */}
                 
             </div>

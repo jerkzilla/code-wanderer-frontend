@@ -3,12 +3,16 @@ import {connect} from 'react-redux';
 
 const Resources = (props) => {
 //    debugger
+
+if (!props.resources) {
+    return null;
+}
    return (
         <div>
-    resources
-    {/* if {props.resources !== undefined} { 
-       props.resources.forEach(resource => <li key={resource.id}>{resource.name}</li> ) 
-    } */}
+           
+      {
+     props.resources.map(resource => <li key={resource.id}>{resource.name}</li> ) 
+     }
         </div>
     )
 
