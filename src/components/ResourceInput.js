@@ -32,11 +32,12 @@ class ResourceInput extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
 
-                    <label>Category:</label>
-                    <select name="categoryId" id="category">
-                        {this.props.categories.map(category =>  <option value={category.id}> {category.name} </option>)}
+                    {/* <label>Category:</label> */}
+                    <select name="categoryId" onChange={this.handleChange} value={this.state.categoryId} id="category">
+                        <option> Choose a Category </option>
+                        {this.props.categories.map(category =>  <option key={category.id} value={category.id}> {category.name} </option>)}
                     </select>
-                    <input type="text" name="categoryId" value={this.state.categoryId} onChange={this.handleChange}/><br/>
+                    {/* <input type="text" name="categoryId" value={this.state.categoryId} onChange={this.handleChange}/><br/> */}
                     <label>Resource Name:</label>
                     <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                     
@@ -57,8 +58,8 @@ const mSTP = globalState => {
     return {categories: globalState.categories}
 }
 
-const mDTP = dispatch => {
-    return {addResourceWithDispatch: () => dispatch(addResource)}
-}
+// const mDTP = dispatch => {
+//     return {addResourceWithDispatch: () => dispatch(addResource(this.state))}
+// }
 
-export default connect(mSTP, mDTP)(ResourceInput)
+export default connect(mSTP, {addResource})(ResourceInput)

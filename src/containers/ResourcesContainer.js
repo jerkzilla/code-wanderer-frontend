@@ -3,8 +3,6 @@ import ResourceInput from '../components/ResourceInput'
 import Resources from '../components/Resources'
 import {connect} from 'react-redux'
 
-
-
 class ResourcesContainer extends React.Component {
 
   render() {
