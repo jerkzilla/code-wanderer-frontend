@@ -11,7 +11,7 @@ if (!props.resources) {
    return (
         <div>
       {
-     props.resources.map(resource => <li key={resource.id}>{resource.name} <img src={resource.img_url} width="400" height="400"/></li> ) 
+     props.resources.map(resource => <li key={resource.id}><a href={resource.img_url} ><img src={resource.img_url} width="400" height="400"/></a></li> ) 
      }
         </div>
     )
