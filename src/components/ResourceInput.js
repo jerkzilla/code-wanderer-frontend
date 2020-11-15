@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addResource} from '../actions/addResource'
+import { withRouter} from 'react-router-dom';
 
 class ResourceInput extends React.Component {
 
@@ -19,6 +20,8 @@ class ResourceInput extends React.Component {
     handleSubmit = (event) => {
     event.preventDefault()
     this.props.addResource(this.state)
+    let categoryId = this.state.categoryId
+    this.props.history.push(`/categories/${categoryId}/resources`);
     this.setState({
         categoryId: '',
         name: '',

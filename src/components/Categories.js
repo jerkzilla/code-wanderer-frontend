@@ -11,7 +11,7 @@ const Categories = (props) => {
        
       let catObject = props.categories.find(category => category.name === event.target.innerText) 
        props.fetchResources(catObject)
-       console.log(props)
+    //    console.log(props)
     }
     return (
 <div>

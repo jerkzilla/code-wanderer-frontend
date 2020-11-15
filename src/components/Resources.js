@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { fetchResources} from '../actions/fetchResources'
 
 const Resources = (props) => {
 //    debugger
@@ -24,4 +25,4 @@ const mSTP = state => {
 
 
 
-export default connect(mSTP)(Resources)
+export default connect(mSTP, {fetchResources})(Resources)
