@@ -1,15 +1,22 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import { deleteResource} from '../actions/deleteResource'
+// import {connect} from 'react-redux';
+// import { deleteResource} from '../actions/deleteResource'
+// import {fetchResources} from '../actions/fetchResources'
 
 const Resources = (props) => {
-        if (!props.resources) {
+    // debugger
+    // console.log(props)  
+    // props.fetchResources(props.category)  
+    if (!props.category.resources) {
         return null;
+        // no cat here click to add
         }
+
     return (
         <div>
+            {/* {props.fetchResources(props.)} */}
             {
-            props.resources.map(resource => 
+            props.category.resources.map(resource => 
                 <li key={resource.id}>
                 <a href={resource.img_url}>
                 <img src={resource.img_url} 
@@ -25,9 +32,6 @@ const Resources = (props) => {
     )
 }
 
-const mSTP = state => {
-    // debugger
-    return {resources: state.resources}
-}
 
-export default connect(mSTP, {deleteResource})(Resources)
+
+export default Resources;

@@ -1,10 +1,17 @@
-import React from 'react'
 import { Link } from "react-router-dom";
+import { fetchCategories} from '../actions/fetchCategories'
+import {connect} from 'react-redux'
+import React, { Component } from 'react'
 
-
-// const Header = () => {}
-function Header() {
-  return (
+ class Header extends Component {
+  componentDidMount() {
+    console.log(this.props)
+      this.props.fetchCategories()
+      
+  }
+  
+  render() {
+        return (
       <div id="Thx">
        <div class="one"><h1 class="one">CODE WANDERER</h1></div>
        <br/>
@@ -19,6 +26,16 @@ function Header() {
          <br/>
       </div>
   )
+    
+  }
 }
 
-export default Header;
+
+
+
+// const Header = () => {}
+// function Header() {
+  
+// }
+
+export default connect(null, {fetchCategories})(Header);

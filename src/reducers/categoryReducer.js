@@ -1,8 +1,8 @@
-export default function categoryReducer(state = {categories: []}, action) {
+export default function categoryReducer(state = {categories: [], resources: []}, action) {
 
     switch(action.type) {
         case 'FETCH_CATEGORIES' :
-            return {categories: action.payload}
+            return {...state, categories: action.payload}
         // case 'FETCH_RESOURCES' :
         //     return {resources: action.payload}
 
@@ -13,18 +13,20 @@ export default function categoryReducer(state = {categories: []}, action) {
         return {...state, resources: category.resources}
             
         case 'ADD_RESOURCE':
+          // debugger
+          
             let categories = state.categories.map(category => {
-                if (category.id === action.payload.id) {
-                  return action.payload
+                if (category.id === action.payload.category_id) {
+                  return {...category, resources: [...category.resources, action.payload]}
                 } else {
                   return category
                 }
               })
-              return {...state, categories: categories}
+              return {...state, categories: categories, resources: [...state.resources, action.payload] }
             
            
-            default:   
-            return state
+          default:   
+          return state
     }
 }
 

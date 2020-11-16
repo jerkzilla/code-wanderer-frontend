@@ -10,11 +10,12 @@ export const addResource = (resource) => {
         body: JSON.stringify(resource)
       })
       .then(response => response.json())
-      .then(category => {
-          if (category.error) {
-            alert(category.error)
+      .then(resource => {
+          if (resource.error) {
+            alert(resource.error)
           } else {
-            dispatch({type: 'ADD_RESOURCE', payload: category})
+            debugger
+            dispatch({type: 'ADD_RESOURCE', payload: resource})
           }
         }
       )
