@@ -9,7 +9,7 @@ $body-bg: #000;
 body {
   font-family: helvetica;
   font-weight: 50;
-   background-image: linear-gradient(skyblue, hsl(51, 85%, 61%));
+   background-image: linear-gradient(skyblue, #f0d748);
   color: white;
 
 }
@@ -112,10 +112,11 @@ button {
   display: inline-block;
 }
 
-input[type=string], select {
-  width: 50%;
+input[type=submit], select {
+  width: 10%;
   padding: 12px 20px;
   margin: 8px 0;
+  cursor: pointer;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 2px;
@@ -844,11 +845,12 @@ a {
     }
   
     .content, .sidebar {
-      float: none;
-      width: 100%;
+      float: right;
+      width: 20%;
     }
   
     .sidebar {
+      float: right;
       background: transparent;
       border: none;
       border-top: 2px solid #ccc;
@@ -1029,23 +1031,38 @@ a {
     text-decoration: none;
   }
   
-  
+  select.category {
+    font-size: 6px;
+    text-align: right;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 90;
+    cursor: pointer;
+    display: right
+  ;
+    max-height: 10px;
+    overflow: hidden;
+    padding: 1 px;
+  }
   
 
   
   select#category {
     font-size: 16px;
-    text-align: center;
-    border-radius: 30px;
+    text-align: right;
+    border-radius: 20px;
     background-color: #fff;
     border: 3px solid #fff;
     padding-left: 0;
     padding-right: 0;
-    opacity: 1;
+    opacity: 90;
     cursor: pointer;
-    display: center;
+    display: right;
     max-height: 100px;
     overflow: hidden;
-    padding: 0;
+    padding: 1 px;
   }
   

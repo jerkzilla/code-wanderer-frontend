@@ -1,21 +1,28 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import { fetchResources} from '../actions/fetchResources'
+import { deleteResource} from '../actions/deleteResource'
 
 const Resources = (props) => {
-//    debugger
-
-if (!props.resources) {
-    return null;
-}
-   return (
+        if (!props.resources) {
+        return null;
+        }
+    return (
         <div>
-      {
-     props.resources.map(resource => <li key={resource.id}><a href={resource.img_url} ><img src={resource.img_url} width="400" height="400"/></a></li> ) 
-     }
+            {
+            props.resources.map(resource => 
+                <li key={resource.id}>
+                <a href={resource.img_url}>
+                <img src={resource.img_url} 
+                alt={resource.name} width="400" height="400"/></a>
+                {/* <button
+                className="delete-btn"
+                onClick={this.props.deleteResource}
+                data-resourceid={resource.id}
+                ></button> */}
+                </li> ) 
+            }
         </div>
     )
-
 }
 
 const mSTP = state => {
@@ -23,6 +30,4 @@ const mSTP = state => {
     return {resources: state.resources}
 }
 
-
-
-export default connect(mSTP, {fetchResources})(Resources)
+export default connect(mSTP, {deleteResource})(Resources)

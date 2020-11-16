@@ -20,25 +20,21 @@ class App extends React.Component {
       <div className="App">
         <Header />
       <Switch />
-        <Route path='/categories/:id/resources/new' render={(routerProps) => <ResourceInput {...routerProps} />} />
-    <Route exact path = '/' render={(routerProps) => <Home {...routerProps}/>}/>
+        <Route exact path='/categories/:id/resources/new' render={(routerProps) => <ResourceInput {...routerProps} />} />
+        <Route exact path = '/' render={(routerProps) => <Home {...routerProps}/>}/>
 
         <Route  exact path='/categories/:id/resources' render={ (routerProps) => {
             console.log(routerProps.match.params)
             const catId = parseInt(routerProps.match.params.id)
-            //  console.log(this.props)
+             console.log(this.props)
             // debugger
-            const resourceObj = this.props.categories.find(category => category.id === catId)
-
-            // console.log(toyObj)
+            const catObj = this.props.categories.find(category => category.id === catId)
+            const resourceObj = catObj.resources
+            console.log(resourceObj)
 
             if (resourceObj) {
               return (
-              <Resources  key={resourceObj.id}
-                        id={resourceObj.id}
-                        name={resourceObj.name}
-                        img={resourceObj.img_url}
-              />
+              <Resources/>
             )
             } else {
               return <div>Loading... </div>

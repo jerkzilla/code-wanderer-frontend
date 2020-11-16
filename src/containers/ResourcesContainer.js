@@ -1,32 +1,32 @@
-import React from 'react'
-import ResourceInput from '../components/ResourceInput'
-import Resources from '../components/Resources'
-import {connect} from 'react-redux'
+// import React from 'react'
+// import ResourceInput from '../components/ResourceInput'
+// import Resources from '../components/Resources'
+// import {connect} from 'react-redux'
 
-class ResourcesContainer extends React.Component {
+// class ResourcesContainer extends React.Component {
 
-  render() {
-    console.log(this.props)
-    return (
-      <div>
+//   render() {
+//     console.log(this.props)
+//     return (
+//       <div>
         
-          <ResourceInput categories={this.props.categories}/><br/>
+//           <ResourceInput categories={this.props.categories}/><br/>
           
-          {/* <Resources categories={this.props.categories}/> */}
-      </div>
+//           {/* <Resources categories={this.props.categories}/> */}
+//       </div>
 
-    )
+//     )
 
-  }
+//   }
 
-}
+// }
 
-const mapStateToProps = state => {
-  // debugger
-  return {
-      categories: state.categories
-      // resources: state.categories.resources
-  }
-}
+// const mapStateToProps = state => {
+//   // debugger
+//   return {
+//       categories: state.categories
+//       // resources: state.categories.resources
+//   }
+// }
 
-export default connect(mapStateToProps)(ResourcesContainer)
+// export default connect(mapStateToProps)(ResourcesContainer)

@@ -50,6 +50,7 @@ class ResourceInput extends React.Component {
                     <br/>
                     <label>Resource URL: </label>
                     <input type="text" name="img_url" value={this.state.img_url} onChange={this.handleChange}/>
+                    <br/>
                     <input type="submit"/>
                 </form>
 

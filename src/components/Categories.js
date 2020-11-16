@@ -8,26 +8,16 @@ const Categories = (props) => {
  const handleClick = (event) => {
         event.preventDefault()   
         //   debugger
-       
       let catObject = props.categories.find(category => category.name === event.target.innerText) 
        props.fetchResources(catObject)
     //    console.log(props)
     }
     return (
-<div>
-
-    {props.categories.map(category => <li onClick={handleClick}key={category.id}><button>{category.name}</button></li> )}
-    
-         <Resources resources={props.resources}/>
-       
-    {/* if({props.resources === undefined}) {<Resources resources={props.resources}/>} */}
-        
-</div>
-
-    )
-
+        <div>
+            {props.categories.map(category => <li onClick={handleClick}key={category.id}><button>{category.name}</button></li> )}
+              <Resources resources={props.resources}/>        
+        </div>
+             )
 }
-
-
 
 export default connect(null, {fetchResources})(Categories)
