@@ -238,12 +238,27 @@ to {background-color:#7b98e8;}
 }
 
 /* The element to apply the animation to */
+// div[class=one], a[class=one] {
+//   font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; font-size: 50px;
+// display: block;
+// margin-left: auto;
+// margin-right: auto;
+// width: 100%;
+// // background-color: skyblue;
+// animation-name: example;
+// animation-duration: 10s;
+// animation-iteration-count: 10000000;
+// border-radius: 8px;
+// max-width: 100%;
+// height: auto;
+// }
+
 div[class=one] {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 50%;
+width: 100%;
 // background-color: skyblue;
 animation-name: example;
 animation-duration: 10s;
@@ -252,6 +267,8 @@ border-radius: 8px;
 max-width: 100%;
 height: auto;
 }
+
+
 
 img {
 box-shadow: 10px 10px;

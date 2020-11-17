@@ -4,7 +4,9 @@ import React  from 'react'
  const Header = () =>  {
         return (
       <div id="Thx">
-        <div class="one"><h1 class="one">CODE WANDERER</h1></div>
+      <div class="one"><h1 class="one">CODE WANDERER</h1></div>
+            {/* use syntax below with other css to use as link */}
+        {/* <div><h1 class="one"><Link class="one" to="/">CODE WANDERER</Link></h1></div><br/><br/> */}
         <br/>
           <div class="links">
           <Link class="header" to="/"><button>Home</button></Link>
