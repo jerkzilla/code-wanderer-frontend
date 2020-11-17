@@ -16,13 +16,13 @@ const Categories = (props) => {
       
        console.log(catObject)
     }
-    // debugger
+
     return (
         <div>
           
-            {props.categories.map(category => <li onClick={handleClick}
+            {props.categories.map(category => <li  onClick={handleClick}
               key={category.id}>
-               <Link to={`/categories/${category.id}/resources`}><button>{category.name}</button></Link>
+               <Link class="Thx" to={`/categories/${category.id}/resources`}><button class="butt">{category.name}</button></Link>
                 </li> )}
                 {console.log(catObject)}
              {(catObject !== null) ? <Resources category={catObject}/> : null}
