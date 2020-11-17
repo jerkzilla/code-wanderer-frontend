@@ -1,71 +1,33 @@
 import React from 'react'
-// import { Player } from 'video-react'
-// import { Link } from "react-router-dom";
 
-
-// const Header = () => {}
-export default class Home extends React.Component {
- 
-  state = {
-    imgIndex: null
-  }
-
-
-  images = [
-    {
-      headline: "Downy Meme",
-      link: "https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/20200330_011818_dvukiy.jpg"
-    },
-    {
-      headline: "Programmer",
-      link: "https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/download_nfnwb2.jpg"
-    },
-    {
-      headline: "Two States",
-      link: "https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/20_rvhzar.png"
-    }
-  ]
- 
-  componentWillMount() {
-    this.displayRandomImage();
-  }
-
-  displayRandomImage = () => {
-    this.setState({
-      imgIndex: Math.floor(Math.random() * 3)
-    });
-  };
-
-  render () {
-    
+const  Home = () => {
   return (
    <div> 
     <div class="sidebar">
         <div class="Thx">DANK MEMES</div>
             <div class="content">
-            
-            <a  href={this.images[0].link}>
+            <a  href="https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/20200330_011818_dvukiy.jpg">
               <img
                 className="Thx"
-                src={this.images[0].link}
+                src="https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/20200330_011818_dvukiy.jpg"
                 alt="meme"
                 class="content"
               />
               </a></div>
               <div class="content">
-            <a  href={this.images[1].link}>
+            <a  href="https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/download_nfnwb2.jpg">
               <img
                 className="d-block"
-                src={this.images[1].link}
+                src="https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/download_nfnwb2.jpg"
                 alt="meme"
                 class="content"
               />
               </a></div>
               <div class="content">
-            <a  href={this.images[2].link}>
+            <a  href="https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/20_rvhzar.png">
               <img
                 className="content"
-                src={this.images[2].link}
+                src="https://res.cloudinary.com/jjmarshall-me/image/upload/v1605358765/home%20components/20_rvhzar.png"
                 alt="meme"
                 class="content"
               />
@@ -81,6 +43,4 @@ export default class Home extends React.Component {
 
   );  
 };
-}
-
-// export default Home;
+export default Home;

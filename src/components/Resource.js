@@ -6,10 +6,10 @@ import {fetchResources} from '../actions/fetchResources'
 class Resource extends Component {
    
     componentDidMount() {
-        console.log(this.props.match.params.name)
-        const foundName = this.props.match.params.name
-        console.log(this.props.resources)
-        console.log(foundName)
+        // console.log(this.props.match.params.name)
+        // const foundName = this.props.match.params.name
+        // console.log(this.props.resources)
+        // console.log(foundName)
     //   const foundRes = this.props.resources.find(resource => resource.name === foundName)    
         // console.log(foundRes)
     }

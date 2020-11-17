@@ -8,31 +8,26 @@ import {fetchCategories} from './actions/fetchCategories'
 import Home from './components/Home'
 import ResourceInput from './components/ResourceInput';
 import Resources from './components/Resources';
-import Categories from './components/Categories';
+// import Categories from './components/Categories';
 
 class App extends React.Component {
   
   componentDidMount() {
     console.log(this.props)
       this.props.fetchCategories()
-      
   }
 
+  // fn to find category and return **catObj = findCatObj
+  //  findCatObj = (routerProps) => 
 
   render() {
     return (
       <div className="App">
         <Header />
       <Switch />
-        <Route exact path='/categories/:id/resources/new' render={(routerProps) => <ResourceInput {...routerProps} />} />
         <Route exact path = '/' render={(routerProps) => <Home {...routerProps}/>}/>
-          {/* <Route exact path = '/resources/:name' render={(routerProps) => {
-            console.log(routerProps.match.params)
-            console.log(this.props)
-        // const resId = parseInt(routerProps.match.params.id)
-              return <Resource {...routerProps} />}} />  */}
         <Route  exact path='/categories/:id/resources' render={ (routerProps) => {
-                
+                // make fn ==> take in routeprops as args, fn return catObj
                 console.log(routerProps.match.params)
                 const catId = parseInt(routerProps.match.params.id)
                 // console.log(this.props)
@@ -41,9 +36,10 @@ class App extends React.Component {
                 // debugger
                 // const resourceObj = catObj.resources
                 console.log(catObj)
+                // make ternary below
             if (catObj) {
               return (
-                <Resources  category={catObj}
+                <ResourcesContainer  category={catObj}
               />
             )
             } else {
@@ -51,9 +47,17 @@ class App extends React.Component {
             }
           }} 
         />
-         <Route exact path='/categories' render={(routerProps) => <CategoriesContainer {...routerProps} />} />
+        <Route exact path='/categories' component={CategoriesContainer} />
+
+        <Route exact path='/categories/:id/resources/new' render={(routerProps) => <ResourceInput {...routerProps} />} />
+          {/* <Route exact path = '/resources/:name' render={(routerProps) => {
+            console.log(routerProps.match.params)
+            console.log(this.props)
+        // const resId = parseInt(routerProps.match.params.id)
+              return <Resource {...routerProps} />}} />  */}
+        
     
-        <Route exact path='/categories/:id' render={(routerProps) => <ResourcesContainer {...routerProps}/>}/>
+        {/* <Route exact path='/categories/:id' render={(routerProps) => <ResourcesContainer {...routerProps}/>}/> */}
           {/* <ResourcesContainer /> */}
         {/* </Route> */}
         

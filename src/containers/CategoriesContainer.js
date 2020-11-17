@@ -1,36 +1,43 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import { fetchCategories } from '../actions/fetchCategories'
-import Categories from '../components/Categories'
-// import Resources from '../components/Resources'
+import {fetchResources} from '../actions/fetchResources'
+import Resources from '../components/Resources'
+import { Link } from "react-router-dom";
 
-// import React, { Component } from 'react'
+const CategoriesContainer = (props) => {
 
-class CategoriesContainer extends React.Component {
-    
-    
+  let catObject = null
 
-    render() {
-        
-        return (
-            <div>
-                <Categories categories={this.props.categories}
-                                // resources={this.props.resources}
-                                />
-                {/* <Resources /> */}
-                {/* <Resources resources={this.props.categories.resources}/> */}
-                
-            </div>
-        )
+ const handleClick = (event) => {
+        event.preventDefault()   
+        //   debugger
+        catObject = props.categories.find(category => category.name === event.target.innerText) 
+        props.fetchResources(catObject)    
+      
+       console.log(catObject)
     }
+
+    return (
+        <div>
+          
+            {props.categories.map(category => <li  onClick={handleClick}
+              key={category.id}>
+               <Link class="Thx" to={`/categories/${category.id}/resources`}><button class="butt">{category.name}</button></Link>
+                </li> )}
+                {console.log(catObject)}
+             {(catObject !== null) ? <Resources category={catObject}/> : null}
+                 
+                
+        </div>
+             )
 }
 
-const mapStateToProps = state => {
-return {
-    categories: state.categories
-    // resources: state.categories.resources
+const mSTP = state => {
+  return {
+      categories: state.categories
+      // resources: state.categories.resources
+  }
+  
 }
 
-}
-
-export default connect(mapStateToProps, { fetchCategories })(CategoriesContainer)
+export default connect(mSTP, {fetchResources})(CategoriesContainer)
