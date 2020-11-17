@@ -14,7 +14,7 @@ export const addResource = (resource) => {
           if (resource.error) {
             alert(resource.error)
           } else {
-            debugger
+            // debugger
             dispatch({type: 'ADD_RESOURCE', payload: resource})
           }
         }

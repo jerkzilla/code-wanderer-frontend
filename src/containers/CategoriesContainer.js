@@ -14,7 +14,9 @@ class CategoriesContainer extends React.Component {
         
         return (
             <div>
-                <Categories categories={this.props.categories}/>
+                <Categories categories={this.props.categories}
+                                // resources={this.props.resources}
+                                />
                 {/* <Resources /> */}
                 {/* <Resources resources={this.props.categories.resources}/> */}
                 

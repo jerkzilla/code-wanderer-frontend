@@ -5,16 +5,18 @@ import React from 'react';
 
 const Resources = (props) => {
     // debugger
-    // console.log(props)  
-    // props.fetchResources(props.category)  
-    if (!props.category.resources) {
+    if (props.category === null) {
         return null;
         // no cat here click to add
         }
-
+        console.log(props)
     return (
         <div>
+
             {/* {props.fetchResources(props.)} */}
+            
+            {props.category.name}
+
             {
             props.category.resources.map(resource => 
                 <li key={resource.id}>

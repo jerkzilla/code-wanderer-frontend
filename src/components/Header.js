@@ -4,11 +4,7 @@ import {connect} from 'react-redux'
 import React, { Component } from 'react'
 
  class Header extends Component {
-  componentDidMount() {
-    console.log(this.props)
-      this.props.fetchCategories()
-      
-  }
+ 
   
   render() {
         return (

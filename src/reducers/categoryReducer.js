@@ -29,4 +29,3 @@ export default function categoryReducer(state = {categories: [], resources: []},
           return state
     }
 }
-

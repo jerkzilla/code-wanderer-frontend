@@ -8,10 +8,17 @@ import {fetchCategories} from './actions/fetchCategories'
 import Home from './components/Home'
 import ResourceInput from './components/ResourceInput';
 import Resources from './components/Resources';
-import Resource from './components/Resource';
+import Categories from './components/Categories';
 
 class App extends React.Component {
   
+  componentDidMount() {
+    console.log(this.props)
+      this.props.fetchCategories()
+      
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -19,11 +26,11 @@ class App extends React.Component {
       <Switch />
         <Route exact path='/categories/:id/resources/new' render={(routerProps) => <ResourceInput {...routerProps} />} />
         <Route exact path = '/' render={(routerProps) => <Home {...routerProps}/>}/>
-          <Route exact path = '/resources/:name' render={(routerProps) => {
+          {/* <Route exact path = '/resources/:name' render={(routerProps) => {
             console.log(routerProps.match.params)
             console.log(this.props)
         // const resId = parseInt(routerProps.match.params.id)
-              return <Resource {...routerProps} />}} /> 
+              return <Resource {...routerProps} />}} />  */}
         <Route  exact path='/categories/:id/resources' render={ (routerProps) => {
                 
                 console.log(routerProps.match.params)
@@ -33,7 +40,7 @@ class App extends React.Component {
                 const catObj = this.props.categories.find(category => category.id === catId)
                 // debugger
                 // const resourceObj = catObj.resources
-                // console.log(resourceObj)
+                console.log(catObj)
             if (catObj) {
               return (
                 <Resources  category={catObj}
@@ -44,9 +51,8 @@ class App extends React.Component {
             }
           }} 
         />
-         <Route exact path='/categories'>
-          <CategoriesContainer />
-        </Route>
+         <Route exact path='/categories' render={(routerProps) => <CategoriesContainer {...routerProps} />} />
+    
         <Route exact path='/categories/:id' render={(routerProps) => <ResourcesContainer {...routerProps}/>}/>
           {/* <ResourcesContainer /> */}
         {/* </Route> */}
@@ -68,7 +74,7 @@ class App extends React.Component {
 const mapStateToProps = (state) => {
   return {
     categories: state.categories,
-    resources: state.resources
+    // resources: state.resources
   }
 }
 
