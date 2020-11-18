@@ -1,5 +1,5 @@
 export const addResource = (resource) => {
-  
+  // debugger
   let categoryId = resource.categoryId
     return (dispatch) => {
       fetch(`http://localhost:3000/categories/${categoryId}/resources`, {

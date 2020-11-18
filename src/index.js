@@ -8,14 +8,7 @@ import { Provider } from 'react-redux'
 import categoryReducer from './reducers/categoryReducer'
 import { BrowserRouter as Router } from "react-router-dom";
 // import resourceReducer from './reducers/resourceReducer';
-
-
 import App from './App';
-
-// const rootReducer = combineReducers({
-//   categoryReducer,
-//   resourceReducer
-// });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

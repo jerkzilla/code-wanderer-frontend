@@ -3,7 +3,7 @@
 //     switch(action.type) {
 //         case 'GET_RESOURCES': 
 //             let category = action.payload
-//         // debugger     
+            
 //             return {...state, resources: category.resources}
 
 //         case 'ADD_RESOURCES':
