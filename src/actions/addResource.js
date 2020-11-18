@@ -1,7 +1,15 @@
 export const addResource = (resource) => {
   // debugger
-  let categoryId = resource.categoryId
-    return (dispatch) => {
+
+  let object = {...resource}
+
+  let categoryId = object.categoryId
+  delete object.categoryId
+  object.category_id = categoryId
+  
+  
+
+  return (dispatch) => {
       fetch(`http://localhost:3000/categories/${categoryId}/resources`, {
         method: 'POST',
         headers: {

@@ -23,11 +23,9 @@ export default function categoryReducer(state = {categories: [], resources: []},
               })
               return {...state, categories: categories, resources: [...state.resources, action.payload] }
         case 'DELETE_RESOURCE':
-              
               let categoryWithResourceToDelete = state.categories.find(category => {
                         return  category.id === action.payload.category_id
                          })
-                        //  debugger
               let resourcesWithoutDeletedResource = categoryWithResourceToDelete.resources.filter(resource => {
                  return resource.id !== action.payload.id
               })

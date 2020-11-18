@@ -16,8 +16,6 @@ class Resource extends Component {
 
     }
 
-
-
     render() {                
         console.log(this.props.resource.category_id)
 

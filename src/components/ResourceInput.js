@@ -19,7 +19,9 @@ class ResourceInput extends React.Component {
     handleSubmit = (event) => {
     event.preventDefault()
     this.props.addResource(this.state)
+    console.log(this.state)
     let categoryId = this.state.categoryId
+    // console.log(categoryId)
     this.props.history.push(`/categories/${categoryId}/resources`);
     this.setState({
         categoryId: '',
