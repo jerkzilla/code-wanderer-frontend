@@ -9,9 +9,9 @@ import React  from 'react'
         {/* <div><h1 class="one"><Link class="one" to="/">CODE WANDERER</Link></h1></div><br/><br/> */}
         <br/>
           <div class="links">
-          <Link class="header" to="/"><button>Home</button></Link>
-          <Link class="header" to="/categories/:id/resources/new"><button>Make A New Resource</button></Link>
-          <Link  class="header" to="/categories"><button>View Resources</button></Link>
+          <Link class="header" to="/"><button class="glow-on-hover" >Home</button></Link>
+          <Link class="header" to="/categories/:id/resources/new"><button class="glow-on-hover" >Create</button></Link>
+          <Link  class="header" to="/categories"><button class="glow-on-hover" > Resources</button></Link>
       </div> 
           <br/>
           <br/>

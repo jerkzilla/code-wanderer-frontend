@@ -7,11 +7,12 @@ import Resource from '../components/Resource'
 // debugger
  const Category = (props) => {
         return (
-        <>
+        <>  
+           
             <Link class="header2" to={`/categories/${props.category.id}/resources`}>
-                <button class="butt">{props.category.name}</button>
+            <div class="box-1"> <button class="btn btn-one">{props.category.name}</button> </div>    
                     </Link>                    
-                    
+                   
         </>
         )
 }

@@ -3,17 +3,11 @@ export default function categoryReducer(state = {categories: [], resources: []},
     switch(action.type) {
         case 'FETCH_CATEGORIES' :
             return {...state, categories: action.payload}
-        // case 'FETCH_RESOURCES' :
-        //     return {resources: action.payload}
-
         case 'GET_RESOURCES' :
-          // debugger
           let category = action.payload
-            // debugger     
         return {...state, resources: category.resources}
             
         case 'ADD_RESOURCE':
-          // debugger
             let categories = state.categories.map(category => {
                 if (category.id === action.payload.category_id) {
                   return {...category, resources: [...category.resources, action.payload]}
@@ -39,16 +33,6 @@ export default function categoryReducer(state = {categories: [], resources: []},
                 }
               })
               return {...state, categories: updatedCategories}
-              
-              // const delResource = action.payload  
-              // return state.resources.filter(resource => resource.id !== action.payload.id)
-//           let categoriesTwo = state.categories.find(category => 
-//             (category.id === action.payload.category_id) 
-// )
-//           // debugger
-//           
-                                 
-//           return {...state, resources: [...state.resources, resourcesWithoutDeletedObject] }
            
           default:   
           return state

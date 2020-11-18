@@ -22,15 +22,14 @@ class Resource extends Component {
         return (
             <div> 
                 <li key={this.props.resource.id}>
-                <button 
-                        onClick={this.handleClick}
-                        data-resourceid={this.props.resource.id}
-                        data-categoryid={this.props.resource.category_id}
-                >Delete Resource</button>
                 <a href={this.props.resource.img_url}>
                 <img src={this.props.resource.img_url} 
                 alt={this.props.resource.name} width="400" height="400"/></a>
-                
+                 <button class="btn-slice" type="button"
+                        onClick={this.handleClick}
+                        data-resourceid={this.props.resource.id}
+                        data-categoryid={this.props.resource.category_id}
+                >Delete</button>
                 </li> 
             </div>
         )
