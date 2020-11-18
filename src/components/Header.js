@@ -12,7 +12,7 @@ import React  from 'react'
           <Link class="header" to="/"><button>Home</button></Link>
           <Link class="header" to="/categories/:id/resources/new"><button>Make A New Resource</button></Link>
           <Link  class="header" to="/categories"><button>View Resources</button></Link>
-          </div> 
+      </div> 
           <br/>
           <br/>
           <br/>

@@ -46,16 +46,28 @@ body {
 }
 
 /* Style the links inside the navigation bar */
-.header a {
-  float: left;
-  color: skyblue;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: underline;
-  font-size: 17px;
-  border-radius: 4px;
+// .header a {
+//   float: left;
+//   color: skyblue;
+//   text-align: center;
+//   padding: 10px 20px;
+//   text-decoration: underline;
+//   font-size: 17px;
+//   border-radius: 4px;
 
-}
+// }
+
+// .header2 a {
+//   float: left;
+//   color: skyblue;
+//   text-align: center;
+//   padding: 10px 20px;
+//   text-decoration: underline;
+//   font-size: 17px;
+//   border-radius: 4px;
+
+// }
+
 .center {
   display: block;
     margin-left: auto;
@@ -331,14 +343,14 @@ body {
 
 
 
-div#header {
-  font-family: helvetica;
-  font-size: 13px;
-  font-weight: 200;
-   background-image: linear-gradient(#ffffff, rgb(73, 162, 194) );
-  color: white;
+// div#header {
+//   font-family: helvetica;
+//   font-size: 13px;
+//   font-weight: 200;
+//    background-image: linear-gradient(#ffffff, rgb(73, 162, 194) );
+//   color: white;
 
-}
+// }
 
 @keyframes animation
 {
@@ -575,6 +587,18 @@ box-sizing: border-box;
 font-style: oblique;
 }
 
+a.header2 { width: 25%;
+  padding: 10px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: .5px solid #ccc;
+  font-size: 30px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-style: oblique;
+  } 
+
+
 input[type=submit] {
 background-color: hsl(112, 68%, 52%); /* Green */
 cursor: pointer;
@@ -696,10 +720,10 @@ font-family: "Lato", sans-serif;
   list-style-type: none;
 }
 
-#header{
-  width:100%; 
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/05/StumbleUpon-hed-796x419.jpg);
-}
+// #header{
+//   width:100%; 
+//   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/05/StumbleUpon-hed-796x419.jpg);
+// }
 #headerContent{
   margin: 0 auto; width: 960px;
 }

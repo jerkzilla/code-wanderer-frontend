@@ -1,8 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addResource} from '../actions/addResource'
-import { withRouter} from 'react-router-dom';
-// import {fetchResources} from '../actions/fetchResources'
 
 class ResourceInput extends React.Component {
 
@@ -31,30 +29,33 @@ class ResourceInput extends React.Component {
     }
 
     render() {
-    
         return (
             <div class="form">
                 <p> ADD A RESOURCE!</p>
-                <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.handleSubmit}>
                     <select name="categoryId" onChange={this.handleChange} value={this.state.categoryId} id="category">
                         <option> Choose a Category </option>
-                        {this.props.categories.map(category =>  <option key={category.id} value={category.id}> {category.name} </option>)}
+                        {this.props.categories.map(category =>  
+                            <option key={category.id} 
+                                    value={category.id}> {
+                                    category.name} </option>)}
                     </select><br/><br/>
                     <label>Resource Name:</label>
-                    <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
+                    <input type="text" name="name" 
+                                       value={this.state.name} 
+                                       onChange={this.handleChange}/>
                     <br/>
                     <br/>
                     <label>Resource URL: </label>
-                    <input type="text" name="img_url" value={this.state.img_url} onChange={this.handleChange}/>
+                    <input type="text" name="img_url" 
+                                       value={this.state.img_url} 
+                                       onChange={this.handleChange}/>
                     <br/>
                     <input type="submit"/>
                 </form>
-
             </div>
         )
     }
-
-
 }
 
 const mSTP = globalState => {
