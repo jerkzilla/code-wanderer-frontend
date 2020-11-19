@@ -42,7 +42,8 @@ div {
  h1.one {
   font-size: 64px;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 400; line-height: 55px; padding: 2px;
- }
+  padding: 12px;
+}
 
  .topnav {
   background-color: #223;
@@ -237,11 +238,11 @@ input[class=submit] {
 
 a { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
 
-p { width: 50%;
+p { width: 40%;
   font-family: Futura, "Trebuchet MS";
 // padding: 12px 20px;
 // margin: 8px 0;
-line-height: 30pt;
+line-height: 10pt;
 display: inline-block;
 border: 1px solid #ccc;
 border-radius: 3px;
@@ -711,7 +712,15 @@ body {
 font-family: "Lato", sans-serif;
 }
 
-
+ul.home {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-count: 2;
+  column-rule: dotted 1px #333;
+  padding: 12px;
+  // list-style-type: circle;
+}
 
  
 
@@ -789,10 +798,23 @@ a {
     }
   
     h2 {
-      border-bottom: 2px solid #ccc;
+      // border-bottom: 2px solid #ccc;
       font-size: 24px;
+      position: relative;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: calc(20px + 5vw);
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.15em #1da9cc;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.007em);
+    animation: shake 2.5s linear forwards;
       line-height: 36px;
       margin-bottom: 16px;
+      color: pink;
     }
   
     h3 {
@@ -1079,14 +1101,14 @@ a {
 //   box-sizing: border-box;
 // }
 
-body {
-  font-family: "Archivo", sans-serif;
-  background-color: #192824;
-}
+// body {
+//   font-family: "Archivo", sans-serif;
+//   background-color: #192824;
+// }
 
 p {
   // margin: calc(50vh - 40px) auto 0 auto;
-  font-size: 35px;
+  font-size: 22px;
   text-transform: uppercase;
   font-family: "Archivo Black", "Archivo", sans-serif;
   font-weight: normal;
@@ -1105,6 +1127,21 @@ body {
   background: #000;
   margin: 0;
 }
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+
 
 
 // @keyframes neon {

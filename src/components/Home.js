@@ -34,10 +34,13 @@ const  Home = () => {
               </a></div>
       </div>
       <div>
-      <p> PROGRAMMER PLAYLIST </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLLAZ4kZ9dFpO90iMas70Tt4_wYjhLGkya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>  <br/>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/-MlNBTSg_Ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>    <br/>
-  
+      <h2 class="neon"> PROGRAMMER PLAYLIST </h2>
+      <ul class="home">
+      <li><p>RUBY</p><iframe width="300" height="300" src="https://www.youtube.com/embed/videoseries?list=PLLAZ4kZ9dFpO90iMas70Tt4_wYjhLGkya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></li>  
+      <li><p>REACT</p><iframe width="300" height="300" src="https://www.youtube.com/embed/-MlNBTSg_Ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe></li>
+      <li><p>MUSIC</p><iframe width="300" height="300" src="https://www.youtube.com/embed/OILrg4658JA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li> 
+      <li><p>TECH</p><iframe width="300" height="300" src="https://www.youtube.com/embed/ObZwFExwzOo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+      </ul>
       </div>
       </div>
 

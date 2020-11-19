@@ -1,39 +1,30 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import { deleteResource} from '../actions/deleteResource'
-// import {fetchResources} from '../actions/fetchResources'
+import { deleteResource } from '../actions/deleteResource'
 
 class Resource extends Component {
    
     handleClick = (event) => {
         event.preventDefault()
-        // debugger
         let categoryId = event.target.dataset.categoryid
         let resourceId = event.target.dataset.resourceid
         this.props.deleteResource(categoryId, resourceId)
-        // console.log(this.props)
-        // this.props.history.push(`/categories/${categoryId}/resources`);
-
     }
 
     render() {                
-        console.log(this.props.resource.category_id)
-
         return (
             <div> 
-                
                 <li key={this.props.resource.id}>
-                <a class="Thx" href={this.props.resource.img_url}>
-                <img src={this.props.resource.img_url} 
-                alt={this.props.resource.name} width="200" height="200"/><br/><br/>
-                {this.props.resource.name}</a>
-                 <button class="myButton" type="button"
+                    <a class="Thx" href={this.props.resource.img_url}>
+                        <img src={this.props.resource.img_url} 
+                        alt={this.props.resource.name} width="200" height="200"/><br/><br/>
+                        {this.props.resource.name}</a>
+                    <button class="myButton" type="button"
                         onClick={this.handleClick}
                         data-resourceid={this.props.resource.id}
-                        data-categoryid={this.props.resource.category_id}
-                >Delete</button>
+                        data-categoryid={this.props.resource.category_id}>
+                        Delete</button>
                 </li> 
-                
             </div>
         )
     }
