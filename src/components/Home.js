@@ -35,8 +35,8 @@ const  Home = () => {
       </div>
       <div>
       <p> PROGRAMMER PLAYLIST </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLLAZ4kZ9dFpO90iMas70Tt4_wYjhLGkya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  <br/>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/-MlNBTSg_Ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <br/>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLLAZ4kZ9dFpO90iMas70Tt4_wYjhLGkya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>  <br/>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-MlNBTSg_Ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>    <br/>
   
       </div>
       </div>

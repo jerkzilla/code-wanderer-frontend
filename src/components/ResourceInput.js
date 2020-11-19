@@ -36,7 +36,7 @@ class ResourceInput extends React.Component {
                 <p> ADD A RESOURCE!</p>
                     <form onSubmit={this.handleSubmit}>
                     <select name="categoryId" onChange={this.handleChange} value={this.state.categoryId} id="category">
-                        <option> Choose a Category </option>
+                        <option>Category</option>
                         {this.props.categories.map(category =>  
                             <option key={category.id} 
                                     value={category.id}> {
