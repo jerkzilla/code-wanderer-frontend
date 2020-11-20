@@ -11,9 +11,6 @@ import React  from 'react'
               <Link class="header" to="/categories/:id/resources/new"><button class="glow-on-hover" >Create</button></Link>
               <Link  class="header" to="/categories"><button class="glow-on-hover">View</button></Link>
             </div> 
-          <br/>
-          <br/>
-          <br/>
       </div>
   )  
   }

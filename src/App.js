@@ -15,10 +15,7 @@ class App extends React.Component {
      
     }
 
-  
-
   render() {
-
     const wanders = [
       {id: 1, name: "jsHolyGrail", link: "https://docs.google.com/document/d/13zS64bha7k0RT_zM2KgRLhDGMav01BIuJjdLMyHDfGA/edit"},
       {id: 2, name: "htmlDomEvents", link: "https://www.w3schools.com/jsref/dom_obj_event.asp"},
@@ -30,8 +27,8 @@ class App extends React.Component {
       {id: 8, name: "jsProject", link: "https://medium.com/swlh/javascript-project-flatiron-school-bd7c1f3aebd7"},
       {id: 9, name: "deployingHeroku", link: "https://medium.com/@siobhanpmahoney/deploying-a-react-frontend-rails-backend-project-to-heroku-4b2c4f6f630c"}
       ]
-
-    return (
+      
+  return (
       <div className="App">
         <Header />
         <WandersContainer wanders={wanders}/>
