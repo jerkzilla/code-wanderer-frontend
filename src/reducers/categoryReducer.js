@@ -1,4 +1,4 @@
-export default function categoryReducer(state = {categories: [], resources: []}, action) {
+export default function categoryReducer(state = {categories: [], resources: [], wanders: []},  action) {
 
     switch(action.type) {
         case 'FETCH_CATEGORIES' :
@@ -33,6 +33,17 @@ export default function categoryReducer(state = {categories: [], resources: []},
                 }
               })
               return {...state, categories: updatedCategories}
+
+          case 'SHUFFLE_WANDERS':
+            // debugger
+            const wanders = action.payload
+            const random = Math.floor(Math.random() * wanders.length);
+              const  shuffledWanders = wanders[random]
+              // debugger
+              
+              return {...state, wanders: shuffledWanders}
+              
+              // debugger
            
           default:   
           return state
