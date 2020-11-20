@@ -104,15 +104,15 @@ div {
 }
 
 .myButton {
-  background-color: rgb(0, 211, 7); /* Green */
+  background-color: #00d3be; /* Green */
   border: none;
   color: white;
-  padding: 2px 15px;
+  padding: 2px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
-  border-radius: 4px;
+  font-size: 8px;
+  border-radius: 6px;
 }
 
 .boobs {
@@ -285,7 +285,7 @@ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   border-radius: 1px;
   display: inline-block;
   font-style: italic;
-  font-family: Impact, monospace;
+  // font-family: Impact, monospace;
 }
 
 a[class=Thx] {
@@ -678,7 +678,7 @@ animation-iteration-count: .02;
 border-radius: 8px;
 max-width: 100%;
 height: auto;
-font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+// font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
 
 }
 
@@ -843,7 +843,7 @@ a {
       border: 1px solid #ccc;
       float: right;
       
-      width: 30%; /* 240px / 800px */
+      width: 25%; /* 240px / 800px */
     }
   
     .sidebar ul {
@@ -1135,10 +1135,7 @@ body {
     0 0 10px #fff,
     0 0 20px #fff,
     0 0 40px #0ff,
-    0 0 80px #0ff,
-    0 0 90px #0ff,
-    0 0 100px #0ff,
-    0 0 150px #0ff;
+
 }
 
 
