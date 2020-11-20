@@ -6,9 +6,8 @@ import { connect } from 'react-redux'
     render() {
         return (
             <div>
-
                 {window.open(`${this.props.wanders.link}`)}
-
+                {window.location.assign("http://localhost:3001/")}
             </div>
         )
     }

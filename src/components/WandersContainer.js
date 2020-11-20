@@ -3,6 +3,7 @@ import Wander from '../components/Wander'
 import {shuffleWanders } from '../actions/shuffleWanders'
 import { connect } from 'react-redux';
 
+
  class WandersContainer extends Component {
    
     state = {
@@ -12,6 +13,8 @@ import { connect } from 'react-redux';
     handleClick = () => {
         this.props.shuffleWanders(this.props.wanders)
         this.setState({isClicked: true})
+        
+        
     }
 
     render() {
@@ -19,10 +22,12 @@ import { connect } from 'react-redux';
 
         return (
             <>
-            <button class="btn btn-one" onClick={this.handleClick}>
+            <button class="btn btn-two" onClick={this.handleClick}>
             WANDER</button>
             {hasBeenClicked ? (
-             <Wander /> )
+             <Wander /> 
+             
+             )
              : (
                 null
              )
