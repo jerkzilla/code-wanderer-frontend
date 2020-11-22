@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
         return (
             <div>
                 {window.open(`${this.props.wanders.link}`)}
-                {window.location.assign("http://localhost:3000/")}
+                {window.location.assign("https://jerkzilla.github.io/code-wanderer-frontend/")}
             </div>
         )
     }
