@@ -1,5 +1,5 @@
 ---
-permalink: /public/index.html
+permalink: /index.html
 ---
 
 React/Redux with Ruby on Rails API Project. Fetching data from Rails API (https://github.com/jerkzilla/code-wanderer-backend), persisting with Ruby on Rails, and rendering resources to the App. This App is only frontend with React/Redux. The details of backend repo follow.
