@@ -6,7 +6,7 @@ export const addResource = (resource) => {
   object.category_id = categoryId
   
   return (dispatch) => {
-      fetch(`http://localhost:3000/categories/${categoryId}/resources`, {
+      fetch(`https://code-wanderer-backend.herokuapp.com/categories/${categoryId}/resources`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

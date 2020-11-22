@@ -1,7 +1,7 @@
 export const deleteResource = (categoryId, resourceId) => {
 
     return (dispatch) => {
-      fetch(`http://localhost:3000/categories/${categoryId}/resources/${resourceId}`, {
+      fetch(`https://code-wanderer-backend.herokuapp.com/categories/${categoryId}/resources/${resourceId}`, {
         method: "DELETE",
         headers: {
           'Content-Type': 'application/json',

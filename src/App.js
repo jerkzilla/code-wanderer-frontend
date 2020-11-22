@@ -9,7 +9,6 @@ import Home from './components/Home'
 import ResourceInput from './components/ResourceInput';
 import WandersContainer from './components/WandersContainer'
 class App extends React.Component {
-  
   componentDidMount() {
     console.log(this.props)
       this.props.fetchCategories()

@@ -1,6 +1,6 @@
 export function fetchCategories() {
     return (dispatch) => {
-    fetch('http://localhost:3000/categories/')
+    fetch('https://code-wanderer-backend.herokuapp.com/categories/')
     .then(resp => resp.json())
     .then(categories => dispatch({
         type: 'FETCH_CATEGORIES', 

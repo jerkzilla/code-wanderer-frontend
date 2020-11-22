@@ -17,6 +17,7 @@ class ResourceInput extends React.Component {
     }
 
     handleSubmit = (event) => {
+        // debugger
     event.preventDefault()
     this.props.addResource(this.state)
     console.log(this.state)
