@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/code-wanderer-frontend/static/css/main.36c2f429.chunk.css",
+    "main.js": "/code-wanderer-frontend/static/js/main.6e2e78ab.chunk.js",
+    "main.js.map": "/code-wanderer-frontend/static/js/main.6e2e78ab.chunk.js.map",
+    "runtime-main.js": "/code-wanderer-frontend/static/js/runtime-main.48751ba9.js",
+    "runtime-main.js.map": "/code-wanderer-frontend/static/js/runtime-main.48751ba9.js.map",
+    "static/js/2.d7811e7b.chunk.js": "/code-wanderer-frontend/static/js/2.d7811e7b.chunk.js",
+    "static/js/2.d7811e7b.chunk.js.map": "/code-wanderer-frontend/static/js/2.d7811e7b.chunk.js.map",
+    "index.html": "/code-wanderer-frontend/index.html",
+    "static/css/main.36c2f429.chunk.css.map": "/code-wanderer-frontend/static/css/main.36c2f429.chunk.css.map",
+    "static/js/2.d7811e7b.chunk.js.LICENSE.txt": "/code-wanderer-frontend/static/js/2.d7811e7b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.48751ba9.js",
+    "static/js/2.d7811e7b.chunk.js",
+    "static/css/main.36c2f429.chunk.css",
+    "static/js/main.6e2e78ab.chunk.js"
+  ]
+}
