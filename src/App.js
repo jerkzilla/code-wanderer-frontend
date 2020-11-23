@@ -8,6 +8,7 @@ import {fetchCategories} from './actions/fetchCategories'
 import Home from './components/Home'
 import ResourceInput from './components/ResourceInput';
 import WandersContainer from './components/WandersContainer'
+import Footer from './components/Footer'
 class App extends React.Component {
   componentDidMount() {
     console.log(this.props)
@@ -56,6 +57,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <WandersContainer wanders={wanders}/>
+       
       <Switch />
         <Route exact path = '/' render={(routerProps) => <Home {...routerProps}/>}/>
         <Route  exact path='/categories/:id/resources' render={ (routerProps) => {
@@ -69,6 +71,7 @@ class App extends React.Component {
           }} />
         <Route exact path='/categories' component={CategoriesContainer} />
         <Route exact path='/categories/:id/resources/new' render={(routerProps) => <ResourceInput {...routerProps} />} />
+        <Footer />
       </div>
     );
   }

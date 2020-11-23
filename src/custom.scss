@@ -17,6 +17,13 @@ body {
   height: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
 div {
   column-rule: 4px double #ff00ff;
 }
@@ -41,6 +48,18 @@ div {
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
  */
+
+ .footer{
+  margin-top: .05rem;
+  padding: .05rem;
+  background-color: #000000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 400; line-height: 55px; padding: 2px;
+
+}
 
  h1.one {
   font-size: 64px;
