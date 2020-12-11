@@ -1,4 +1,4 @@
-React/Redux with Ruby on Rails API Project. Fetching data from Rails API (https://github.com/jerkzilla/code-wanderer-backend), persisting with Ruby on Rails, and rendering resources to the App. This App is only frontend with React/Redux. The details of backend repo follow.
+React/Redux with Ruby on Rails API Project. Fetching data from Rails API (https://github.com/johnjamesmarshalljr/code-wanderer-backend), persisting with Ruby on Rails, and rendering resources to the App. This App is only frontend with React/Redux. The details of backend repo follow.
 
 About this project
 This is a hub for code newbies and beginners. Users can view resourcses by category, add resources themselves, or wander around the app and find videos, memes, and an array of resources to help them learn to code. The special sauce is the "WANDER" button, which takes users to a random resource or source of coding inspiration, leaving the navigation to the algorithm.
