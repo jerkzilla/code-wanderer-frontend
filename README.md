@@ -1,3 +1,6 @@
+This app is live! Click below
+https://johnjamesmarshalljr.github.io/code-wanderer-frontend/#/
+
 React/Redux with Ruby on Rails API Project. Fetching data from Rails API (https://github.com/johnjamesmarshalljr/code-wanderer-backend), persisting with Ruby on Rails, and rendering resources to the App. This App is only frontend with React/Redux. The details of backend repo follow.
 
 About this project
@@ -5,7 +8,7 @@ This is a hub for code newbies and beginners. Users can view resourcses by categ
 
 Usage:
 Check out this walk-through video!
-https://youtu.be/ffTcze_CTCg
+https://youtu.be/JB9a3aXpjxg
 
 Frontend with React/Redux
 Clone and check out the repository for client side with React/Redux: https://github.com/johnjamesmarshalljr/code-wanderer-frontend
