@@ -8,12 +8,12 @@ Check out this walk-through video!
 https://youtu.be/ffTcze_CTCg
 
 Frontend with React/Redux
-Clone and check out the repository for client side with React/Redux: https://github.com/jerkzilla/code-wanderer-frontend
+Clone and check out the repository for client side with React/Redux: https://github.com/johnjamesmarshalljr/code-wanderer-frontend
 
 Start the React server Run npm start and Open http://localhost:3001 to view it in the browser.
 
 Backend Ruby on Rails
-Clone and check out the repository for Rails API. https://github.com/jerkzilla/code-wanderer-backend
+Clone and check out the repository for Rails API. https://github.com/johnjamesmarshalljr/code-wanderer-backend
 
 Run Bundle install
 
