@@ -26,7 +26,7 @@ class ResourcesContainer extends React.Component {
       <div>
         <input
           class="newnewnew"
-          placeholder="S E A R C H"
+          placeholder="SEARCH"
           type="text"
           name="name"
           onChange={this.handleChange}
