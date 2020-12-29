@@ -10,8 +10,8 @@ $body-bg: #000;
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
 body {
-  // max-width: 500px;
-  width: 500px;
+  width: 920px;
+  // overflow: hidden;
   font-family: helvetica;
   font-weight: 50;
   background-image: linear-gradient(skyblue, #f0d748);
@@ -19,12 +19,12 @@ body {
   height: auto;
 }
 
-@media only screen and (max-width: 500px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
+// @media only screen and (max-width: 500px) {
+//   /* For mobile phones: */
+//   [class*="col-"] {
+//     width: 100%;
+//   }
+// }
 
 .newnewnew {
   font-family: "Montserrat";
@@ -236,6 +236,8 @@ div[class="box-1"] {
 //   }
 
 .btn-one {
+  font-size: 10px;
+
   color: #fff;
   transition: all 0.3s;
   position: relative;
@@ -878,7 +880,7 @@ li {
   text-shadow: none;
   // width: auto;
   padding: 7px 14px;
-  margin: 4px;
+  // margin: 4px;
   // display: inline-block;
   border: 2px solid #ccc;
   border-radius: 2px;
@@ -896,7 +898,7 @@ select {
 }
 
 form {
-  width: 80%;
+  // width: 80%;
   padding: 20px 20px;
   margin: 8px 10px;
   display: inline-block;
@@ -923,7 +925,7 @@ button[type="submit"] {
 
 a.header {
   // width: 33%;
-  padding: 6px 10px;
+  // padding: 6px 10px;
   margin: 4px 0;
   display: inline-block;
   border: 0.5px solid #ccc;
@@ -935,11 +937,11 @@ a.header {
 
 a.header2 {
   // width: 25%;
-  padding: 16px 10px;
+  padding: 6px 6px;
   margin: 4px 0;
   display: inline-flex;
   border: 0.5px solid #ccc;
-  font-size: 30px;
+  font-size: 10px;
   border-radius: 3px;
   box-sizing: border-box;
   font-style: oblique;
@@ -1092,7 +1094,7 @@ ul.home {
   -moz-columns: 2;
   column-count: 2;
   // column-rule: dotted 1px #333;
-  padding: 20px;
+  // padding: 20px;
   border: 20px;
   // list-style-type: circle;
 }
