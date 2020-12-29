@@ -186,7 +186,7 @@ class App extends React.Component {
           path="/categories/:id/resources/new"
           render={(routerProps) => <ResourceInput {...routerProps} />}
         />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

@@ -18,21 +18,23 @@ class Resource extends Component {
             <img
               src={this.props.resource.img_url}
               alt={this.props.resource.name}
-              width="150"
-              height="150"
+              width="80%"
+              height="80%"
             />
             <br />
             <br />
             {this.props.resource.name}
           </a>
+          <br />
+          <br />
           <button
-            class="glow-on-hover"
+            class="btn-one"
             type="button"
             onClick={this.handleClick}
             data-resourceid={this.props.resource.id}
             data-categoryid={this.props.resource.category_id}
           >
-            -Delete-
+            Delete
           </button>
         </li>
       </div>
