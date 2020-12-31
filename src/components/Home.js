@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <>
+    <div class="bton">
       {/* <div class="sidebar">
         <div class="Thx">DANK MEMES</div>
         <div class="content">
@@ -37,7 +37,7 @@ const Home = () => {
         </div>
       </div> */}
 
-      <h2 class="neon">PLAYLISTS</h2>
+      <h2 class="neon">INSPIRATION</h2>
       <ul class="home">
         <li>
           <p>
@@ -116,7 +116,7 @@ const Home = () => {
           ></iframe>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 export default Home;
