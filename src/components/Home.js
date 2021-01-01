@@ -40,18 +40,17 @@ const Home = () => {
       <h2 class="neon">INSPIRATION</h2>
       <ul class="home">
         <li>
-          <p>
-            <a
-              class="likeP"
-              href="https://www.youtube.com/watch?list=PLLAZ4kZ9dFpO90iMas70Tt4_wYjhLGkya&v=CIe1DxrSrhs&feature=emb_title"
-              target="_blank"
-            >
-              RUBY
-            </a>
-          </p>
+          <a
+            class="likeP"
+            href="https://www.youtube.com/watch?list=PLLAZ4kZ9dFpO90iMas70Tt4_wYjhLGkya&v=CIe1DxrSrhs&feature=emb_title"
+            target="_blank"
+          >
+            RUBY
+          </a>
+
           <iframe
             width="100%"
-            height="100%"
+            height="80%"
             src="https://www.youtube.com/embed/videoseries?list=PLLAZ4kZ9dFpO90iMas70Tt4_wYjhLGkya"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -59,18 +58,17 @@ const Home = () => {
           ></iframe>
         </li>
         <li>
-          <p>
-            <a
-              class="likeP"
-              href="https://www.youtube.com/watch?v=-MlNBTSg_Ww&feature=emb_title"
-              target="_blank"
-            >
-              REACT
-            </a>
-          </p>
+          <a
+            class="likeP"
+            href="https://www.youtube.com/watch?v=-MlNBTSg_Ww&feature=emb_title"
+            target="_blank"
+          >
+            REACT
+          </a>
+
           <iframe
             width="100%"
-            height="100%"
+            height="80%"
             src="https://www.youtube.com/embed/-MlNBTSg_Ww"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -78,18 +76,17 @@ const Home = () => {
           ></iframe>
         </li>
         <li>
-          <p>
-            <a
-              class="likeP"
-              href="https://www.youtube.com/watch?v=OILrg4658JA&feature=emb_title"
-              target="_blank"
-            >
-              MUSIC
-            </a>
-          </p>
+          <a
+            class="likeP"
+            href="https://www.youtube.com/watch?v=OILrg4658JA&feature=emb_title"
+            target="_blank"
+          >
+            MUSIC
+          </a>
+
           <iframe
             width="100%"
-            height="100%"
+            height="80%"
             src="https://www.youtube.com/embed/OILrg4658JA"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -97,18 +94,17 @@ const Home = () => {
           ></iframe>
         </li>
         <li>
-          <p>
-            <a
-              class="likeP"
-              href="https://www.youtube.com/watch?v=ObZwFExwzOo&feature=emb_title"
-              target="_blank"
-            >
-              TECH
-            </a>
-          </p>
+          <a
+            class="likeP"
+            href="https://www.youtube.com/watch?v=ObZwFExwzOo&feature=emb_title"
+            target="_blank"
+          >
+            TECH
+          </a>
+
           <iframe
             width="100%"
-            height="100%"
+            height="80%"
             src="https://www.youtube.com/embed/ObZwFExwzOo"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

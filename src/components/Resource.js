@@ -25,7 +25,7 @@ class Resource extends Component {
             // height="100%"
             // allowFullScreen=""
             width="100%"
-            height="450vw"
+            height="650vw"
             frameborder="0"
           />
           {/* <br />
