@@ -17,22 +17,8 @@ class Resource extends Component {
           <a class="Thx" href={this.props.resource.img_url} target="_blank">
             <p class="btn"> {this.props.resource.name}</p>
           </a>
-          <iframe
-            name={this.props.resource.name}
-            src={this.props.resource.img_url}
-            // alt={this.props.resource.name}
-            // width="100%"
-            // height="100%"
-            // allowFullScreen=""
-            width="100%"
-            height="650vw"
-            frameborder="0"
-          />
-          {/* <br />
-            <br /> */}
-
           <button
-            class="btn-one"
+            class="example_f"
             type="button"
             onClick={this.handleClick}
             data-resourceid={this.props.resource.id}
@@ -40,6 +26,20 @@ class Resource extends Component {
           >
             Delete
           </button>
+          <iframe
+            class="resource"
+            name={this.props.resource.name}
+            src={this.props.resource.img_url}
+            // alt={this.props.resource.name}
+            // width="100%"
+            // height="100%"
+            allowFullScreen=""
+            width="100%"
+            height="550vw"
+            frameborder="0"
+          />
+          {/* <br />
+            <br /> */}
         </li>
       </div>
     );

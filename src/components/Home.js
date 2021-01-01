@@ -39,7 +39,7 @@ const Home = () => {
 
       <h2 class="neon">INSPIRATION</h2>
       <ul class="home">
-        <li>
+        <li class="gradient-border">
           <a
             class="likeP"
             href="https://www.youtube.com/watch?list=PLLAZ4kZ9dFpO90iMas70Tt4_wYjhLGkya&v=CIe1DxrSrhs&feature=emb_title"
