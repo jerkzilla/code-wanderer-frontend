@@ -17,7 +17,7 @@ class Resource extends Component {
           <a class="Thx" href={this.props.resource.img_url} target="_blank">
             <p class="btn"> {this.props.resource.name}</p>
           </a>
-          <button
+          {/* <button
             class="example_f"
             type="button"
             onClick={this.handleClick}
@@ -25,7 +25,7 @@ class Resource extends Component {
             data-categoryid={this.props.resource.category_id}
           >
             Delete
-          </button>
+          </button> */}
           <iframe
             class="resource"
             name={this.props.resource.name}
