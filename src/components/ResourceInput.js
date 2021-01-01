@@ -16,14 +16,12 @@ class ResourceInput extends React.Component {
   };
 
   handleSubmit = (event) => {
-    // debugger
     event.preventDefault();
     console.log("a");
     this.props.addResource(this.state);
     console.log("g");
     console.log(this.state);
     let categoryId = this.state.categoryId;
-    // console.log(categoryId)
     this.props.history.push(`/categories/${categoryId}/resources`);
     this.setState({
       categoryId: "",
@@ -34,7 +32,7 @@ class ResourceInput extends React.Component {
 
   render() {
     return (
-      <div class="form">
+      <>
         <form onSubmit={this.handleSubmit}>
           <p> ADD A RESOURCE!</p>
           <br />
@@ -54,8 +52,9 @@ class ResourceInput extends React.Component {
           </select>
           <br />
           <br />
-          <label>Name:</label>
+          {/* <label>Name:</label> */}
           <input
+            placeholder="NAME"
             type="text"
             name="name"
             value={this.state.name}
@@ -63,17 +62,19 @@ class ResourceInput extends React.Component {
           />
           <br />
           <br />
-          <label>URL: </label>
+          {/* <label>URL:</label> */}
           <input
+            placeholder="URL"
             type="text"
             name="img_url"
             value={this.state.img_url}
             onChange={this.handleChange}
           />
           <br />
+          <br />
           <input type="submit" />
         </form>
-      </div>
+      </>
     );
   }
 }

@@ -144,10 +144,6 @@ h1.one {
   overflow: hidden;
 }
 
-div.links {
-  // column-count: 2;
-}
-
 /* Style the links inside the navigation bar */
 // .header a {
 //   float: left;
@@ -399,11 +395,32 @@ select {
   box-sizing: border-box;
 }
 
+// ::-webkit-input-placeholder {
+//   /* Chrome/Opera/Safari */
+//   color: black;
+//   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+//     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+//   // background-color: orangered;
+// }
+// ::-moz-placeholder {
+//   /* Firefox 19+ */
+//   color: black;
+// }
+// :-ms-input-placeholder {
+//   /* IE 10+ */
+//   color: black;
+// }
+// :-moz-placeholder {
+//   /* Firefox 18- */
+//   color: black;
+// }
+
 input[type="text"],
 select {
   padding: 6px 10px;
   margin: 8px 0;
   display: inline-block;
+
   // border: 1px solid #ccc;
   // border-radius: 2px;
   // box-sizing: border-box;
@@ -936,8 +953,8 @@ li {
   font-family: "Open Sans", Helvetica, sans-serif;
   text-shadow: none;
   // width: auto;
-  padding: 7px 14px;
-  // margin: 4px;
+  padding: 7px 18px;
+  // margin: 10px;
   // display: inline-block;
   border: 2px solid #ccc;
   border-radius: 2px;
@@ -948,10 +965,10 @@ form {
   // width: 80%;
   padding: 20px 20px;
   margin: 8px 10px;
-  display: inline-block;
   border: 1px solid #ccc;
   border-radius: 2px;
   box-sizing: border-box;
+  // display: inline-block;
 }
 
 .intro {
@@ -1061,19 +1078,19 @@ h1 {
 }
 
 // label {
-// margin-top: 4px;
-// // color: white;
-// // text-shadow: .5px .5px 1px #000000, 0 0 10px #00e1ff, 0 0 2px #34d3c3;
-// color: #ffffff;
-// padding: 2px 4px;
-// margin: px 0;
-// border: none;
-// font-size: 35px;
-// text-align: center;
-// border-radius: 1px;
-// display: inline-block;
-// /* font-style: italic; */
-// font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+//   margin-top: 4px;
+//   // color: white;
+//   // text-shadow: .5px .5px 1px #000000, 0 0 10px #00e1ff, 0 0 2px #34d3c3;
+//   color: #ffffff;
+//   padding: 2px 4px;
+//   margin: px 0;
+//   border: none;
+//   font-size: 35px;
+//   text-align: center;
+//   border-radius: 1px;
+//   display: inline-block;
+//   /* font-style: italic; */
+//   // font-family: Impact, Haettenschweiler, "Arial Narrow", sans-serif;
 // }
 
 @keyframes example {
@@ -1086,20 +1103,20 @@ h1 {
 }
 
 /* The element to apply the animation to */
-div[class="Thx"] {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  // width: 80%;
+// div[class="Thx"] {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   // width: 80%;
 
-  animation-name: example;
-  animation-duration: 1s;
-  animation-iteration-count: 0.02;
-  border-radius: 8px;
-  // max-width: 100%;
-  height: auto;
-  // font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
-}
+//   animation-name: example;
+//   animation-duration: 1s;
+//   animation-iteration-count: 0.02;
+//   border-radius: 8px;
+//   // max-width: 100%;
+//   height: auto;
+//   // font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+// }
 
 img {
   box-shadow: 10px 10px;

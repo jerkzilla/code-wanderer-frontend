@@ -17,8 +17,6 @@ class ResourcesContainer extends React.Component {
     return this.props.category.resources.filter((resource) =>
       resource.name.toUpperCase().includes(this.state.name.toUpperCase())
     );
-    // this.props.category.resources.map(resource => resource.name === this.state.name)
-    // check local state and filter this.props.category.resources based on user input
   };
 
   render() {
