@@ -15,11 +15,16 @@ class Resource extends Component {
       <div>
         <li key={this.props.resource.id}>
           <a class="Thx" href={this.props.resource.img_url}>
-            <img
+            <iframe
+              name={this.props.resource.name}
               src={this.props.resource.img_url}
-              alt={this.props.resource.name}
-              width="80%"
-              height="80%"
+              // alt={this.props.resource.name}
+              // width="100%"
+              // height="100%"
+              // allowFullScreen=""
+              width="100%"
+              height="450vw"
+              frameborder="0"
             />
             <br />
             <br />
