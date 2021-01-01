@@ -14,24 +14,23 @@ class Resource extends Component {
     return (
       <div>
         <li key={this.props.resource.id}>
-          <a class="Thx" href={this.props.resource.img_url}>
-            <iframe
-              name={this.props.resource.name}
-              src={this.props.resource.img_url}
-              // alt={this.props.resource.name}
-              // width="100%"
-              // height="100%"
-              // allowFullScreen=""
-              width="100%"
-              height="450vw"
-              frameborder="0"
-            />
-            <br />
-            <br />
-            {this.props.resource.name}
+          <a class="Thx" href={this.props.resource.img_url} target="_blank">
+            <p class="btn"> {this.props.resource.name}</p>
           </a>
-          <br />
-          <br />
+          <iframe
+            name={this.props.resource.name}
+            src={this.props.resource.img_url}
+            // alt={this.props.resource.name}
+            // width="100%"
+            // height="100%"
+            // allowFullScreen=""
+            width="100%"
+            height="450vw"
+            frameborder="0"
+          />
+          {/* <br />
+            <br /> */}
+
           <button
             class="btn-one"
             type="button"
